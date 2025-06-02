@@ -1,6 +1,6 @@
 {
-  "name": "uoc-boilerplate",
-  "version": "3.11.0",
+  "name": "uoc-ehc2-pac3",
+  "version": "1.0.0",
   "private": true,
   "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
   "scripts": {
@@ -8,8 +8,7 @@
     "parcel:build": "parcel build --target web --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "start": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean parcel:build",
-    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
+    "build": "npm-run-all clean parcel:build"
   },
   "targets": {
     "web": {
@@ -23,17 +22,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
+    "url": "git+https://github.com/isaacBejarano/uoc-ehc2-pac3.git"
   },
   "author": {
-    "name": "Jordi Tarrida",
-    "email": "jorditarrida@uoc.edu"
+    "name": "Isaac Bejarano",
+    "email": "undefined"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
+    "url": "https://github.com/isaacBejarano/uoc-ehc2-pac3/issues"
   },
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
+  "homepage": "https://github.com/isaacBejarano/uoc-ehc2-pac3#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.13.3",
     "@tailwindcss/postcss": "^4.1.8",
@@ -45,5 +44,8 @@
     "rimraf": "^6.0.1",
     "sharp": "^0.33.5",
     "tailwindcss": "^4.1.8"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
