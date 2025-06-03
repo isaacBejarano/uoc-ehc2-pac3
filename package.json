@@ -8,7 +8,8 @@
     "parcel:build": "parcel build --target web --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "start": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean parcel:build"
+    "build": "npm-run-all clean format parcel:build",
+    "format": "prettier --write src/**/*.scss"
   },
   "targets": {
     "web": {
@@ -41,6 +42,7 @@
     "parcel": "^2.13.3",
     "postcss-preset-env": "^10.1.3",
     "posthtml-include": "^2.0.1",
+    "prettier": "3.5.3",
     "rimraf": "^6.0.1",
     "sharp": "^0.33.5",
     "tailwindcss": "^4.1.8"
