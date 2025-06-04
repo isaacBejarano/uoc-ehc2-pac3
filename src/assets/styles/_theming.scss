@@ -1,0 +1,37 @@
+@theme {
+  // Fonts
+  ////
+  --font-primary: "AlegreyaSans", Arial, sans-serif;
+  --font-secondary: "Georgia", "Times New Roman", serif;
+  // TODO: For Buttons and standalone Links use .font-monospace
+
+  // Overrides: Color
+  ////
+
+  --color-sky-500: #bada55;
+  --color-emerald-200: red;
+
+  // Extensions: Color
+  ////
+
+  --color-uoc-corporate: #000078;
+  --color-uoc-masterbrand: #73edff;
+
+  // Customizations: Breakpoints
+  ////
+
+  /** Bootstrap 5 vs. Tailwind 4 breakpoints
+	*
+	* b5:sm:576px --> tw4:sm:40rem (640px)
+	* b5:md:768px --> tw4:md:48rem (768px) // coincide!
+	* b5:lg:992px --> tw4:lg:64rem (1024px)
+	* b5:xl:1200px --> tw4:xl:80rem (1280px)
+	* b5:xxl:1400px --> tw4:2xl:96rem (1536px)
+	* custom:full-hd:1920px --> custom:3xl:120rem (1920px)
+	*/
+  --breakpoint-sm: px-to-rem(576px);
+  --breakpoint-lg: px-to-rem(992px);
+  --breakpoint-xl: px-to-rem(1200px);
+  --breakpoint-2xl: px-to-rem(1400px);
+  --breakpoint-3xl: px-to-rem(1920px);
+}

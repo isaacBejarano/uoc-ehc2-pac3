@@ -1,0 +1,37 @@
+// FIXME: remove
+
+////
+// BOOTSTRAP VARIABLES OVERRIDES
+////
+
+// Opt-in Enablings
+////
+
+// Disable default Grid Sys
+$enable-grid-classes: false;
+
+// Enable CSS Grid Sys
+$enable-cssgrid: true;
+
+// Website THEMING
+////
+
+$primary: #d63384; // pink-500
+$secondary: #084298; // blue-700
+$black: #0f0f0f; // broken black
+$white: #ffffff;
+
+// Component THEMING
+////
+
+$theme-primary-subtle: #efadce; // primary-subtle
+$theme-secondary-shade: #031633; // blue-900
+
+// Accordion
+$accordion-button-color: $theme-primary-subtle;
+$accordion-icon-color: $theme-primary-subtle;
+$accordion-button-active-bg: $theme-primary-subtle;
+$accordion-button-active-color: $theme-secondary-shade;
+$accordion-icon-active-color: $theme-secondary-shade;
+$accordion-bg: $theme-secondary-shade;
+$accordion-color: $white;

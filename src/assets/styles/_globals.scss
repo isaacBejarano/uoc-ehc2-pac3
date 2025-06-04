@@ -1,0 +1,66 @@
+@use "sass:map";
+@use "variables" as vars;
+
+// FIXME: remove
+
+////
+// GLOBALS
+////
+
+// Body
+////
+
+body > * {
+  // text
+  font-family: vars.$font-primary;
+}
+
+// Headings
+////
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: vars.$font-secondary;
+}
+
+// Paragraph
+////
+
+p {
+  line-height: 1.5;
+}
+
+// Layout - Tablet landscape & Desktop
+////
+
+// For big wide screns divide the viewport in 3 block sections (header, main, footer). Thus the footer is always bottom.
+// grid-area will aplly only for first level nested elements inside the wrapper class "layout-areas-3"
+@media (min-width: map.get(vars.$theme-breakpoints, lg)) and (orientation: landscape) {
+  .layout-areas-3 {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+
+    // max. 3 blocks (e.g. head, main, footer)
+    > .layout-area-header {
+      grid-area: header;
+    }
+
+    > .layout-area-main {
+      grid-area: main;
+    }
+
+    > .layout-area-footer {
+      grid-area: footer;
+    }
+  }
+}

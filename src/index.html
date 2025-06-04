@@ -1,47 +1,148 @@
 <!doctype html>
-
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
-    <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <include src="./views/head-base.html"></include>
   </head>
 
-  <body>
-    <button class="bg-amber-200 p-2">Button A</button>
+  <body
+    class="overflow-x-hidden min-w-[100vw] pg-index layout-areas-3 text-blue-500"
+  >
+    <include src="./views/header.html"></include>
 
-    <div
-      class="flex flex-col items-center gap-6 p-7 md:flex-row md:gap-8 rounded-2xl"
+    <p class="font-(family-name:--font-primary)">FONT</p>
+    <p class="font-(family-name:--font-secondary)">FONT</p>
+    <p class="font-mono">FONT</p>
+
+    <hr />
+    <!-- TODO: -->
+
+    <main
+      class="layout-area-main poster position-relative w-lg-85 w-xl-75 mx-auto p-3 my-md-4"
     >
-      <div>
-        <img
-          class="size-48 shadow-xl rounded-md"
-          alt=""
-          src="./assets/images/tailwind_cover.png"
-        />
-      </div>
-      <div class="card p-2 flex items-center md:items-start">
-        <span class="text-2xl font-medium">Class Warfare</span>
-        <span class="font-medium text-sky-500">The Anti-Patterns</span>
-        <span class="flex gap-2 font-medium text-gray-600 dark:text-gray-400">
-          <span>No. 4</span>
-          <span>·</span>
-          <span>2025</span>
-        </span>
-      </div>
-    </div>
+      <p
+        class="poster-featured mb-2 me-md-4 mt-md-4 text-center text-md-end h1"
+      >
+        Ellen MacArthur
+      </p>
+      <h1
+        class="poster-title align-self-start ms-md-2 mb-1 m-lg-0 ps-lg-3 text-center text-lg-start text-primary text-uppercase h5 font-monospace"
+      >
+        Speaker Spotlight
+      </h1>
 
-    <p class="p-3 bg-sky-500">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quam,
-      minima corporis nesciunt consequuntur exercitationem molestias, adipisci
-      expedita laudantium ipsum incidunt inventore dignissimos non soluta
-      architecto sunt, atque similique perferendis.
-    </p>
+      <div
+        class="poster-divider h-auto border border-primary-subtle rounded-4 shadow-sm"
+      ></div>
+
+      <p
+        class="poster-content d-block position-relative pt-1 px-2 pt-sm-2 px-sm-3 p-md-3 text-dark"
+      >
+        Dame Ellen MacArthur has enjoyed a successful career, having earned the
+        title of the fastest solo sailor to sail around the world. Having
+        circled the globe, Ellen returned with a new concept of how the world
+        works - including the Earth's finite resources and how our actions as
+        humans are affecting the world around us.
+      </p>
+
+      <a
+        class="poster-read-more d-block ms-3 mt-1 mb-4 ms-lg-auto mt-lg-2 mx-auto font-monospace"
+        href="javascript:void(0)"
+      >
+        READ MORE
+      </a>
+
+      <img
+        class="poster-img object-fit-cover h-md-100 rounded-4 border border-4 border-purple-200 shadow-sm"
+        src="./assets/images/ellen_mcarthur_original.jpg?as=webp"
+        alt="Ellen MacArthur's face"
+        width="350"
+        height="350"
+      />
+
+      <div
+        class="poster-aside w-auto mt-1 mt-md-0 d-flex align-items-center justify-content-md-center text-purple-500 bg-md-purple-200 rounded-start-4"
+      >
+        <p class="poster-aside-text ms-3 ms-md-0">
+          <span class="d-block fw-bold w-75 w-sm-100" lang="ca">
+            Fira de Barcelona - Gran Via
+          </span>
+          <span class="fst-italic">May 2025, Barcelona</span>
+        </p>
+      </div>
+
+      <button
+        class="poster-modal-opener btn position-absolute bottom-0 end-0 mb-5 me-5 mb-md-4 me-md-0 mb-lg-0 me-lg-4 btn-primary text-decoration-underline font-monospace shadow-sm"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#indexModal"
+      >
+        Conference Dates
+      </button>
+    </main>
 
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script>
-    <!-- do not remove this line! -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="indexModal"
+      tabindex="-1"
+      aria-labelledby="indexModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="modal-title fs-5 font-monospace" id="indexModalLabel">
+              Conference Dates
+            </p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <ul class="modal-body list-group list-group-flush">
+            <li class="list-group-item">
+              <p>
+                <span class="d-block fw-bold text-primary" lang="ca">
+                  Fira de Barcelona - Gran Via
+                </span>
+                <span class="d-block"> Hall 8.1 - Press Area </span>
+                <span class="fst-italic text-secondary">
+                  12.5.2025 Barcelona
+                </span>
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p>
+                <span class="d-block fw-bold text-primary" lang="ca">
+                  Fira de Barcelona - Gran Via
+                </span>
+                <span class="d-block"> Hall 8 - Vip Area </span>
+                <span class="fst-italic text-secondary">
+                  13.5.2025 Barcelona
+                </span>
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p>
+                <span class="d-block fw-bold text-primary" lang="ca">
+                  Fira de Barcelona - Gran Via
+                </span>
+                <span class="d-block"> Hall 6 - Tibidabo Suite </span>
+                <span class="fst-italic text-secondary">
+                  14.5.2025 Barcelona
+                </span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
+
+  <script type="module" src="./assets/scripts/main.js"></script>
+  <!-- do not remove this line! -->
 </html>

@@ -1,0 +1,19 @@
+// @use "sass:map";
+// @use "./variables" as vars;
+
+// FIXME: remove
+
+////
+// FUNCTIONS
+////
+
+// Get B5 breakpoints (px) - shorter syntax then mapping
+////
+// @function get-breakpoint($breakpoint) {
+//   @return map.get(vars.$theme-breakpoints, $breakpoint);
+// }
+
+// 1rem -> 16px
+@function px-to-rem($px, $base: 16) {
+  @return calc(($px / $base) * 1rem);
+}
