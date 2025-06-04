@@ -1,19 +1,19 @@
 /**
- * Use this file to import partials.
- * Do not include SCSS code in this file.
- */
+* Use this file to import partials.
+* Do not include SCSS code in this file.
+*/
 
 /**
- * Import variables
- */
+* Import variables
+*/
 
-// @import "variables";
+@import "variables";
 
 /**
- * Import npm dependencies
- * see: https://v2.parceljs.org/features/module-resolution/
- * see commented examples below
- */
+* Import npm dependencies
+* see: https://v2.parceljs.org/features/module-resolution/
+* see commented examples below
+*/
 
 @import "tailwindcss/index.css";
 @import "@fortawesome/fontawesome-free/css/all.css";
@@ -23,6 +23,7 @@
  * It's a best practice to use a different partial for each page
  */
 
+@import "layouts/components/card";
 @import "layouts/home"; // fallback for older browsers
 
 /**
