@@ -7,23 +7,15 @@
 * Import variables
 */
 
-// FIXME: remove
-
 @import "font-face";
-@import "functions"; // TODO: added
-@import "theming"; // TODO: changed
-// @import "./globals";
+@import "theming";
+@import "overrides";
 
 /**
 * Import npm dependencies
 * see: https://v2.parceljs.org/features/module-resolution/
 * see commented examples below
 */
-
-// FIXME: remove
-// @import "b5-override-vars";
-// @import "b5-utilities";
-// @import "b5-overrides";
 
 @import "tailwindcss/index.css";
 @import "@fortawesome/fontawesome-free/css/all.css";
@@ -36,7 +28,7 @@
 @import "layouts/components/card";
 
 // FIXME: remove
-// @import "layouts/index"; // fallback for older browsers
+// @import "layouts/index"; // TODO: use @supports
 // @import "./layouts/speakers";
 
 /**

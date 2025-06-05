@@ -1,0 +1,26 @@
+////
+// OVERRIDES
+////
+
+@theme {
+  // Breakpoints
+  ////
+
+  /** Bootstrap 5 vs. Tailwind 4
+	*
+	* b5:sm:576px --> tw4:sm:40rem (640px)
+	* b5:md:768px --> tw4:md:48rem (768px) // coincide!
+	* b5:lg:992px --> tw4:lg:64rem (1024px)
+	* b5:xl:1200px --> tw4:xl:80rem (1280px)
+	* b5:xxl:1400px --> tw4:2xl:96rem (1536px)
+	* custom:full-hd:1920px --> custom:3xl:120rem (1920px)
+	*
+	* 1rem -> 16px
+	*/
+  --breakpoint-sm: calc((576 / 16) * 1rem);
+  --breakpoint-md: calc((768 / 16) * 1rem);
+  --breakpoint-lg: calc((992 / 16) * 1rem);
+  --breakpoint-xl: calc((1200 / 16) * 1rem);
+  --breakpoint-2xl: calc((1400 / 16) * 1rem);
+  --breakpoint-3xl: calc((1920 / 16) * 1rem);
+}

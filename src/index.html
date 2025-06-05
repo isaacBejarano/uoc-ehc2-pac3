@@ -5,27 +5,20 @@
   </head>
 
   <body
-    class="overflow-x-hidden min-w-[100vw] pg-index layout-areas-3 text-blue-500"
+    class="overflow-x-hidden min-w-screen font-primary grid lg:landscape:grid-rows-[auto_1fr_auto] lg:landscape:grid-cols-[1fr] min-h-screen pg-index text-ultramarine"
   >
     <include src="./views/header.html"></include>
 
-    <p class="font-(family-name:--font-primary)">FONT</p>
-    <p class="font-(family-name:--font-secondary)">FONT</p>
-    <p class="font-mono">FONT</p>
-
-    <hr />
-    <!-- TODO: -->
-
     <main
-      class="layout-area-main poster position-relative w-lg-85 w-xl-75 mx-auto p-3 my-md-4"
+      class="layout-area-main poster position-relative lg:w-85 w-xl-75 mx-auto p-3 my-md-4"
     >
       <p
-        class="poster-featured mb-2 me-md-4 mt-md-4 text-center text-md-end h1"
+        class="leading-[1.5] poster-featured mb-2 me-md-4 mt-md-4 text-center text-md-end h1"
       >
         Ellen MacArthur
       </p>
       <h1
-        class="poster-title align-self-start ms-md-2 mb-1 m-lg-0 ps-lg-3 text-center text-lg-start text-primary text-uppercase h5 font-monospace"
+        class="font-mono uppercase poster-title align-self-start ms-md-2 mb-1 m-lg-0 ps-lg-3 text-center text-lg-start text-primary text-uppercase h5 font-monospace"
       >
         Speaker Spotlight
       </h1>
@@ -35,7 +28,7 @@
       ></div>
 
       <p
-        class="poster-content d-block position-relative pt-1 px-2 pt-sm-2 px-sm-3 p-md-3 text-dark"
+        class="leading-[1.5] poster-content d-block position-relative pt-1 px-2 pt-sm-2 px-sm-3 p-md-3 text-dark"
       >
         Dame Ellen MacArthur has enjoyed a successful career, having earned the
         title of the fastest solo sailor to sail around the world. Having
@@ -45,14 +38,14 @@
       </p>
 
       <a
-        class="poster-read-more d-block ms-3 mt-1 mb-4 ms-lg-auto mt-lg-2 mx-auto font-monospace"
+        class="font-mono poster-read-more d-block ms-3 mt-1 mb-4 ms-lg-auto mt-lg-2 mx-auto font-monospace"
         href="javascript:void(0)"
       >
         READ MORE
       </a>
 
       <img
-        class="poster-img object-fit-cover h-md-100 rounded-4 border border-4 border-purple-200 shadow-sm"
+        class="poster-img object-fit-cover md:h-full rounded-4 border border-4 border-plum-subtle shadow-sm"
         src="./assets/images/ellen_mcarthur_original.jpg?as=webp"
         alt="Ellen MacArthur's face"
         width="350"
@@ -60,9 +53,9 @@
       />
 
       <div
-        class="poster-aside w-auto mt-1 mt-md-0 d-flex align-items-center justify-content-md-center text-purple-500 bg-md-purple-200 rounded-start-4"
+        class="poster-aside w-auto mt-1 mt-md-0 d-flex align-items-center justify-content-md-center text-plum md:bg-plum-subtle rounded-start-4"
       >
-        <p class="poster-aside-text ms-3 ms-md-0">
+        <p class="leading-[1.5] poster-aside-text ms-3 ms-md-0">
           <span class="d-block fw-bold w-75 w-sm-100" lang="ca">
             Fira de Barcelona - Gran Via
           </span>
@@ -71,7 +64,7 @@
       </div>
 
       <button
-        class="poster-modal-opener btn position-absolute bottom-0 end-0 mb-5 me-5 mb-md-4 me-md-0 mb-lg-0 me-lg-4 btn-primary text-decoration-underline font-monospace shadow-sm"
+        class="font-mono poster-modal-opener btn position-absolute bottom-0 end-0 mb-5 me-5 mb-md-4 me-md-0 mb-lg-0 me-lg-4 btn-primary text-decoration-underline font-monospace shadow-sm"
         type="button"
         data-bs-toggle="modal"
         data-bs-target="#indexModal"
@@ -93,19 +86,22 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <p class="modal-title fs-5 font-monospace" id="indexModalLabel">
+            <p
+              class="leading-[1.5] modal-title fs-5 font-monospace"
+              id="indexModalLabel"
+            >
               Conference Dates
             </p>
             <button
               type="button"
-              class="btn-close"
+              class="font-mono btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
           <ul class="modal-body list-group list-group-flush">
             <li class="list-group-item">
-              <p>
+              <p class="leading-[1.5]">
                 <span class="d-block fw-bold text-primary" lang="ca">
                   Fira de Barcelona - Gran Via
                 </span>
@@ -116,7 +112,7 @@
               </p>
             </li>
             <li class="list-group-item">
-              <p>
+              <p class="leading-[1.5]">
                 <span class="d-block fw-bold text-primary" lang="ca">
                   Fira de Barcelona - Gran Via
                 </span>
@@ -127,7 +123,7 @@
               </p>
             </li>
             <li class="list-group-item">
-              <p>
+              <p class="leading-[1.5]">
                 <span class="d-block fw-bold text-primary" lang="ca">
                   Fira de Barcelona - Gran Via
                 </span>

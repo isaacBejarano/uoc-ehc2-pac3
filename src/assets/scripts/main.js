@@ -6,11 +6,32 @@
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
 // TODO: JavaScript (modal y accordion)
-// TODO: no és necessari que reescriguis la part de JS necessària per a què funcioni correctament (per exemple, si has fet servir un navbar, només cal que amaguis el menú versió desktop i que mostris la icona de l’hamburguesa, però no cal que en fer-hi clic es desplegui o es replegui el menú)
 
 /**
  * Write any other JavaScript below
  */
+
+// toggle collapse of "references" list in index.html
+document.collapse = (toggler = null, icon = null, target = null) => {
+  if (!toggler) throw new ReferenceError("Accordion toggler not defined");
+  if (!icon) throw new ReferenceError("Accordion icon not defined");
+  if (!target) throw new ReferenceError("Accordion list not defined");
+
+  const btn = document.getElementById(toggler);
+  const btnIcon = document.getElementById(icon);
+  const list = document.getElementById(target);
+
+  btn.classList.toggle("bg-secondary-shade");
+  btn.classList.toggle("text-primary-subtle");
+  btn.classList.toggle("bg-primary-subtle");
+  btn.classList.toggle("text-secondary-shade");
+  btnIcon.style.transform =
+    btnIcon.style.transform === "rotate(0deg)" ||
+    btnIcon.style.transform.length === 0
+      ? "rotate(180deg)"
+      : "rotate(0deg)";
+  list.classList.toggle("hidden");
+};
 
 ////
 // Data Injection
