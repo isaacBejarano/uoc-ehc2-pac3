@@ -56,7 +56,7 @@
     </div>
   </div>
 
-  <div class="d-flex flex-wrap justify-content-center gap-2 py-3 text-white">
+  <div class="flex flex-wrap justify-center gap-2 py-4 text-white">
     <img
       class="bg-white rounded"
       src="./assets/images/logo.png?as=webp"
@@ -75,401 +75,273 @@
     </div>
   </div>
 
-  <div class="mx-auto lg:w-[50%] accordion accordion-flush" id="accordionRefs">
-    <div class="mt-5 accordion-item">
-      <!-- toogler -->
-
-      <button
-        onclick="collapse('js-collapse-toggler', 'js-collapse-toggler-icon', 'js-collapse-references')"
-        id="js-collapse-toggler"
-        class="p-4 font-mono border border-primary-subtle rounded-t-2xl cursor-pointer bg-secondary-shade text-primary-subtle rounded-top-4 inline-flex w-full justify-between rounded-top-md"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#flush-collapseOne"
-        aria-expanded="false"
-        aria-controls="flush-collapseOne"
+  <div class="mx-auto lg:w-[50%]">
+    <!-- toogler -->
+    <button
+      class="inline-flex justify-between w-full p-4 bg-secondary-shade text-primary-subtle border border-primary-subtle rounded-t-2xl cursor-pointer"
+      id="js-collapse-toggler"
+      type="button"
+      onclick="collapse('js-collapse-toggler', 'js-collapse-toggler-icon', 'js-collapse-references')"
+    >
+      References
+      <svg
+        class="-mr-1 size-7"
+        id="js-collapse-toggler-icon"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        aria-hidden="true"
+        data-slot="icon"
       >
-        References
-        <svg
-          id="js-collapse-toggler-icon"
-          class="-mr-1 size-5"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          aria-hidden="true"
-          data-slot="icon"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-            clip-rule="evenodd"
-          />
-        </svg>
-      </button>
+        <path
+          fill-rule="evenodd"
+          d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
 
-      <!-- list -->
-      <div
-        class="mb-5 border border-primary-subtle mb-lg-3 hidden accordion-collapse"
-        id="js-collapse-references"
-        data-bs-parent="#accordionRefs"
+    <!-- list -->
+    <div
+      class="hidden mb-4 p-4 bg-secondary-shade border border-primary-subtle"
+      id="js-collapse-references"
+    >
+      <!-- website -->
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light rounded-t-md cursor-pointer"
+        href="https://sustainability-speakers.com/news/top-10-lists/official-circular-economy-speakers"
+        target="_blank"
       >
-        <div class="p-5 bg-secondary-shade accordion-body">
-          <ul class="bg-white border rounded-md list-group">
-            <!-- website -->
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://sustainability-speakers.com/news/top-10-lists/official-circular-economy-speakers"
-                target="_blank"
-              >
-                The Sustainability Speakers Agency
-                <span class="text-primary">(website)</span>
-              </a>
-            </li>
-            <!-- images -->
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://commons.wikimedia.org/wiki/File:Ellen-McArthur_(1).jpg"
-                target="_blank"
-              >
-                Ellen McArthur
-                <span class="text-primary">(image)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://sustainability-speakers.com/wp-content/uploads/2021/04/Pia-Heidenmark-Cook-Sustainability-.jpg.webp"
-                target="_blank"
-              >
-                Pia Heidenmark Cook
-                <span class="text-primary">(image)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://climatehughes.org/wp-content/uploads/2022/02/EO0A7596-1280x914.jpg"
-                target="_blank"
-              >
-                Nigel Topping
-                <span class="text-primary">(image)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://commons.wikimedia.org/wiki/File:2019_-_Centre_Stage_-_Day_2_VJR21719_(49024431887).jpg"
-                target="_blank"
-              >
-                Kate Brandt
-                <span class="text-primary">(image)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://eco-business.imgix.net/uploads/ebmedia/fileuploads/sally_uren.jpg?ar=16%3A10&auto=format&dpr=2&fit=crop&ixlib=django-1.2.0&q=45&width=480"
-                target="_blank"
-              >
-                Sally Uren
-                <span class="text-primary">(image)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://sustainability-speakers.com/wp-content/uploads/2021/04/Steve-Howard.jpg.webp"
-                target="_blank"
-              >
-                Steve Howard
-                <span class="text-primary">(image)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://commons.wikimedia.org/wiki/File:Jeremy_Schwartz.png"
-                target="_blank"
-              >
-                Jeremy Schwartz
-                <span class="text-primary">(image)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://sustainability-speakers.com/wp-content/uploads/2022/02/Mike-Barry-Sustainability-.jpg.webp"
-                target="_blank"
-              >
-                Mike Barry
-                <span class="text-primary">(image)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://assets.weforum.org/sf_account/image/bW1nk-YuXW1eeDOjkA61ZaORWIPK9KFyi-nFsm1iyfc.jpg"
-                target="_blank"
-              >
-                Michael Pawlyn
-                <span class="text-primary">(image)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://ses-cdn.react.hk/wp-content/uploads/2024/07/27123007/632921108a6c13b8652136c9_Keynote-Speech-A_Ms-Peggy-LIU_Photo.jpg"
-                target="_blank"
-              >
-                Peggy Liu
-                <span class="text-primary">(image)</span>
-              </a>
-            </li>
-            <!-- videos -->
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://youtu.be/qCYkN3uQ0Vs"
-                target="_blank"
-              >
-                Ellen MacArthur Sustainability Speaker | The Importance of
-                Embracing a Circular Economy
-                <span class="text-primary">(video)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://youtu.be/e2lUZurRX8k"
-                target="_blank"
-              >
-                Pia Heidenmark Cook: Learning from IKEA's approach to
-                Sustainability [EXCLUSIVE INTERVIEW]
-                <span class="text-primary">(video)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://youtu.be/fglK87oXbTE"
-                target="_blank"
-              >
-                The Issue With "Environmentally Friendly" | Q&A With UK Climate
-                Champion
-                <span class="text-primary">(video)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://youtu.be/olLhLNrAEys"
-                target="_blank"
-              >
-                Kate Brandt: Google's Chief Sustainability Officer on Google's
-                Circular Economy Mission
-                <span class="text-primary">(video)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://youtu.be/hhGxwkZNZj8"
-                target="_blank"
-              >
-                Sustainability Challenges For Retail & Hospitality | Q&A With
-                CEO of Forum for the Future
-                <span class="text-primary">(video)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://youtu.be/A4t55FUtVJg"
-                target="_blank"
-              >
-                Steve Howard Sustainability Speaker | Future of the Climate
-                Change Battle
-                <span class="text-primary">(video)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://youtu.be/YP9Gri0zSo8"
-                target="_blank"
-              >
-                Jeremy Schwartz Speaker Showreel | Former CEO of The Body Shop
-                Reveals Key Tools for Transformation
-                <span class="text-primary">(video)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://youtu.be/032TShApaho"
-                target="_blank"
-              >
-                Full interview - Mike Barry, Marks & Spencer, talks about
-                innovation
-                <span class="text-primary">(video)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://youtu.be/vy2gOq6nTJY"
-                target="_blank"
-              >
-                Learning from nature | Michael Pawlyn | TEDxLondonCity2.0
-                <span class="text-primary">(video)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://youtu.be/_yP9IRbxtEw"
-                target="_blank"
-              >
-                TEDxChCh - Peggy Liu - China as the Cleantech Laboratory of the
-                World
-                <span class="text-primary">(video)</span>
-              </a>
-            </li>
-            <!-- articles -->
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://www.ellenmacarthurfoundation.org/topics/circular-economy-introduction/overview"
-                target="_blank"
-              >
-                What is a circular economy?
-                <span class="text-primary">(article)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://www.ellenmacarthurfoundation.org/eliminate-waste-and-pollution"
-                target="_blank"
-              >
-                Eliminate waste and pollution
-                <span class="text-primary">(article)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://www.ellenmacarthurfoundation.org/circulate-products-and-materials"
-                target="_blank"
-              >
-                Circulate products and materials
-                <span class="text-primary">(article)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://www.ellenmacarthurfoundation.org/regenerate-nature"
-                target="_blank"
-              >
-                Regenerate nature
-                <span class="text-primary">(article)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://www.ellenmacarthurfoundation.org/articles/circular-ish-embracing-the-messy-reality-of-circular-economy-innovation"
-                target="_blank"
-              >
-                Circular-ish: embracing the messy reality of circular economy
-                innovation
-                <span class="text-primary">(article)</span>
-              </a>
-            </li>
-            <!-- logos -->
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://www.barcelona.cat/assetsdi/img/logo.svg"
-                target="_blank"
-              >
-                <span lang="ca"> Ajuntament de Barcelona </span>
-                logo
-                <span class="text-primary">(svg)</span>
-              </a>
-            </li>
-            <li
-              class="py-3 px-4 cursor-pointer hover:bg-silver-subtle text-coal-subtle hover:text-coal"
-            >
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://guestevents.firabarcelona.com/app/uploads/2022/01/logo-fira-de-barcelona-positive-1.svg"
-                target="_blank"
-              >
-                <span lang="ca"> Fira de Barcelona </span>
-                logo
-                <span class="text-primary">(svg)</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+        The Sustainability Speakers Agency
+        <span class="text-primary">(website)</span>
+      </a>
+      <!-- images -->
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://commons.wikimedia.org/wiki/File:Ellen-McArthur_(1).jpg"
+        target="_blank"
+      >
+        Ellen McArthur
+        <span class="text-primary">(image)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://sustainability-speakers.com/wp-content/uploads/2021/04/Pia-Heidenmark-Cook-Sustainability-.jpg.webp"
+        target="_blank"
+      >
+        Pia Heidenmark Cook
+        <span class="text-primary">(image)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://climatehughes.org/wp-content/uploads/2022/02/EO0A7596-1280x914.jpg"
+        target="_blank"
+      >
+        Nigel Topping
+        <span class="text-primary">(image)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://commons.wikimedia.org/wiki/File:2019_-_Centre_Stage_-_Day_2_VJR21719_(49024431887).jpg"
+        target="_blank"
+      >
+        Kate Brandt
+        <span class="text-primary">(image)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://eco-business.imgix.net/uploads/ebmedia/fileuploads/sally_uren.jpg?ar=16%3A10&auto=format&dpr=2&fit=crop&ixlib=django-1.2.0&q=45&width=480"
+        target="_blank"
+      >
+        Sally Uren
+        <span class="text-primary">(image)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://sustainability-speakers.com/wp-content/uploads/2021/04/Steve-Howard.jpg.webp"
+        target="_blank"
+      >
+        Steve Howard
+        <span class="text-primary">(image)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://commons.wikimedia.org/wiki/File:Jeremy_Schwartz.png"
+        target="_blank"
+      >
+        Jeremy Schwartz
+        <span class="text-primary">(image)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://sustainability-speakers.com/wp-content/uploads/2022/02/Mike-Barry-Sustainability-.jpg.webp"
+        target="_blank"
+      >
+        Mike Barry
+        <span class="text-primary">(image)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://assets.weforum.org/sf_account/image/bW1nk-YuXW1eeDOjkA61ZaORWIPK9KFyi-nFsm1iyfc.jpg"
+        target="_blank"
+      >
+        Michael Pawlyn
+        <span class="text-primary">(image)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://ses-cdn.react.hk/wp-content/uploads/2024/07/27123007/632921108a6c13b8652136c9_Keynote-Speech-A_Ms-Peggy-LIU_Photo.jpg"
+        target="_blank"
+      >
+        Peggy Liu
+        <span class="text-primary">(image)</span>
+      </a>
+      <!-- videos -->
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://youtu.be/qCYkN3uQ0Vs"
+        target="_blank"
+      >
+        Ellen MacArthur Sustainability Speaker | The Importance of Embracing a
+        Circular Economy
+        <span class="text-primary">(video)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://youtu.be/e2lUZurRX8k"
+        target="_blank"
+      >
+        Pia Heidenmark Cook: Learning from IKEA's approach to Sustainability
+        [EXCLUSIVE INTERVIEW]
+        <span class="text-primary">(video)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://youtu.be/fglK87oXbTE"
+        target="_blank"
+      >
+        The Issue With "Environmentally Friendly" | Q&A With UK Climate Champion
+        <span class="text-primary">(video)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://youtu.be/olLhLNrAEys"
+        target="_blank"
+      >
+        Kate Brandt: Google's Chief Sustainability Officer on Google's Circular
+        Economy Mission
+        <span class="text-primary">(video)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://youtu.be/hhGxwkZNZj8"
+        target="_blank"
+      >
+        Sustainability Challenges For Retail & Hospitality | Q&A With CEO of
+        Forum for the Future
+        <span class="text-primary">(video)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://youtu.be/A4t55FUtVJg"
+        target="_blank"
+      >
+        Steve Howard Sustainability Speaker | Future of the Climate Change
+        Battle
+        <span class="text-primary">(video)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://youtu.be/YP9Gri0zSo8"
+        target="_blank"
+      >
+        Jeremy Schwartz Speaker Showreel | Former CEO of The Body Shop Reveals
+        Key Tools for Transformation
+        <span class="text-primary">(video)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://youtu.be/032TShApaho"
+        target="_blank"
+      >
+        Full interview - Mike Barry, Marks & Spencer, talks about innovation
+        <span class="text-primary">(video)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://youtu.be/vy2gOq6nTJY"
+        target="_blank"
+      >
+        Learning from nature | Michael Pawlyn | TEDxLondonCity2.0
+        <span class="text-primary">(video)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://youtu.be/_yP9IRbxtEw"
+        target="_blank"
+      >
+        TEDxChCh - Peggy Liu - China as the Cleantech Laboratory of the World
+        <span class="text-primary">(video)</span>
+      </a>
+      <!-- articles -->
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://www.ellenmacarthurfoundation.org/topics/circular-economy-introduction/overview"
+        target="_blank"
+      >
+        What is a circular economy?
+        <span class="text-primary">(article)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://www.ellenmacarthurfoundation.org/eliminate-waste-and-pollution"
+        target="_blank"
+      >
+        Eliminate waste and pollution
+        <span class="text-primary">(article)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://www.ellenmacarthurfoundation.org/circulate-products-and-materials"
+        target="_blank"
+      >
+        Circulate products and materials
+        <span class="text-primary">(article)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://www.ellenmacarthurfoundation.org/regenerate-nature"
+        target="_blank"
+      >
+        Regenerate nature
+        <span class="text-primary">(article)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://www.ellenmacarthurfoundation.org/articles/circular-ish-embracing-the-messy-reality-of-circular-economy-innovation"
+        target="_blank"
+      >
+        Circular-ish: embracing the messy reality of circular economy innovation
+        <span class="text-primary">(article)</span>
+      </a>
+      <!-- logos -->
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
+        href="https://www.barcelona.cat/assetsdi/img/logo.svg"
+        target="_blank"
+      >
+        <span lang="ca"> Ajuntament de Barcelona </span>
+        logo
+        <span class="text-primary">(svg)</span>
+      </a>
+      <a
+        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-silver-light rounded-b-md cursor-pointer"
+        href="https://guestevents.firabarcelona.com/app/uploads/2022/01/logo-fira-de-barcelona-positive-1.svg"
+        target="_blank"
+      >
+        <span lang="ca"> Fira de Barcelona </span>
+        logo
+        <span class="text-primary">(svg)</span>
+      </a>
     </div>
   </div>
 </footer>
