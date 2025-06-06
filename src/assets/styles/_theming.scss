@@ -12,16 +12,18 @@
   // Color
   ////
 
+  --color-primary-shade: oklch(0.51 0.17 354.99); // TODO: docu
   --color-primary: #d63384;
   --color-primary-subtle: #efadce;
   --color-primary-light: #f7d6e6; // TODO: docu
-  --color-secondary: #084298;
   --color-secondary-shade: #031633;
+  --color-secondary: #084298;
   --color-coal: #0f0f0f;
   --color-coal-subtle: oklch(0.26 0.01 0 / 0.75);
   --color-silver-subtle: oklch(0.98 0 0);
-  --color-silver-light: rgb(222, 226, 230); // TODO: docu
+  --color-silver-light: oklch(0.91 0.01 0); // TODO: docu
   --color-plum: oklch(0.5 0.19 295);
   --color-plum-subtle: oklch(0.8 0.07 300.92);
   --color-ultramarine: oklch(0.58 0.23 260.03);
+  --color-ultramarine-subtle: oklch(0.76 0.06 258.71); // TODO: docu
 }

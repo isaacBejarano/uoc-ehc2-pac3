@@ -66,8 +66,7 @@
       <button
         class="font-mono poster-modal-opener btn position-absolute bottom-0 end-0 mb-5 me-5 mb-md-4 me-md-0 mb-lg-0 me-lg-4 btn-primary text-decoration-underline font-monospace shadow-sm"
         type="button"
-        data-bs-toggle="modal"
-        data-bs-target="#indexModal"
+        onclick="opennModal('js-index-modal-bg', 'js-index-modal-dialog')"
       >
         Conference Dates
       </button>
@@ -75,64 +74,63 @@
 
     <include src="./views/footer.html"></include>
 
-    <!-- Modal -->
     <div
-      class="modal fade"
-      id="indexModal"
-      tabindex="-1"
-      aria-labelledby="indexModalLabel"
+      class="hidden fixed inset-0 bg-coal/50 transition-opacity"
+      id="js-index-modal-bg"
       aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <p
-              class="leading-[1.5] modal-title fs-5 font-monospace"
-              id="indexModalLabel"
-            >
+    ></div>
+
+    <!-- Modal -->
+    <div class="hidden" id="js-index-modal-dialog">
+      <div class="fixed inset-0 top-6 z-10 w-screen p-2 overflow-y-auto">
+        <div
+          class="w-100 lg:w-[50dvh] mx-auto bg-white border border-none rounded-md"
+        >
+          <div
+            class="flex flex-wrap justify-between items-center p-4 border-b border-silver-light"
+          >
+            <p class="leading-[1.5] text-coal-subtle text-lg font-mono">
               Conference Dates
             </p>
             <button
+              class="text-coal-subtle hover:text-coal cursor-pointer"
               type="button"
-              class="font-mono btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+              onclick="closeModal('js-index-modal-bg', 'js-index-modal-dialog')"
+            >
+              <i class="fa-solid fa-xmark text-3xl"></i>
+            </button>
           </div>
-          <ul class="modal-body list-group list-group-flush">
-            <li class="list-group-item">
-              <p class="leading-[1.5]">
-                <span class="d-block fw-bold text-primary" lang="ca">
-                  Fira de Barcelona - Gran Via
-                </span>
-                <span class="d-block"> Hall 8.1 - Press Area </span>
-                <span class="fst-italic text-secondary">
-                  12.5.2025 Barcelona
-                </span>
-              </p>
-            </li>
-            <li class="list-group-item">
-              <p class="leading-[1.5]">
-                <span class="d-block fw-bold text-primary" lang="ca">
-                  Fira de Barcelona - Gran Via
-                </span>
-                <span class="d-block"> Hall 8 - Vip Area </span>
-                <span class="fst-italic text-secondary">
-                  13.5.2025 Barcelona
-                </span>
-              </p>
-            </li>
-            <li class="list-group-item">
-              <p class="leading-[1.5]">
-                <span class="d-block fw-bold text-primary" lang="ca">
-                  Fira de Barcelona - Gran Via
-                </span>
-                <span class="d-block"> Hall 6 - Tibidabo Suite </span>
-                <span class="fst-italic text-secondary">
-                  14.5.2025 Barcelona
-                </span>
-              </p>
-            </li>
+
+          <ul class="mt-4">
+            <include
+              src="./views/component-list-conference.html"
+              locals='{
+              "title": "Fira de Barcelona - Gran Via",
+              "details": "Hall 8.1 - Press Area",
+              "date": "12.5.2025 Barcelona"        
+              }'
+            >
+            </include>
+
+            <include
+              src="./views/component-list-conference.html"
+              locals='{
+              "title": "Fira de Barcelona - Gran Via",
+              "details": "Hall 8 - Vip Area",
+              "date": "13.5.2025 Barcelona"        
+              }'
+            >
+            </include>
+
+            <include
+              src="./views/component-list-conference.html"
+              locals='{
+              "title": "Fira de Barcelona - Gran Via",
+              "details": "Hall 6 - Tibidabo Suite",
+              "date": "14.5.2025 Barcelona"        
+              }'
+            >
+            </include>
           </ul>
         </div>
       </div>

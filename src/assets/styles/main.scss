@@ -19,7 +19,6 @@
 */
 
 @import "tailwindcss/index.css";
-// @import "npm:@fortawesome/fontawesome-free/css/all.css";
 @import "@fortawesome/fontawesome-free/css/all.css";
 
 /**
@@ -27,11 +26,15 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/components/card";
+// 1º components
+@import "layouts/component-list-link";
+@import "layouts/component-list-conference";
+
+// 2º pages
 
 // FIXME: remove
 // @import "layouts/index"; // TODO: use @supports
-// @import "./layouts/speakers";
+// @import "layouts/speakers"; // TODO: use grid utility
 
 /**
  * Do NOT include anything else in this file!

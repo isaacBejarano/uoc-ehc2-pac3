@@ -1,52 +1,69 @@
 <footer class="bg-secondary-shade">
-  <div
-    class="bg-white py-2 px-3 border-top border-secondary-subtle bg-light-subtle text-center"
-  >
-    <div class="lg:w-85 w-xl-75 mx-auto">
-      <p class="leading-[1.5] d-md-inline me-1">Contact Us:</p>
-      <address class="d-md-inline">
-        <a class="d-block d-md-inline me-md-2" href="javascript:void(0)"
-          >circular-economy-101@yopmail.com</a
+  <div class="py-2 px-4 bg-white border-t border-ultramarine-subtle">
+    <div class="text-center">
+      <p class="leading-[1.5] md:inline me-1">Contact Us:</p>
+      <address class="md:inline underline">
+        <a
+          class="block md:inline md:me-2 text-primary hover:text-primary-shade"
+          href="javascript:void(0)"
         >
-        <a href="javascript:void(0)">+34 93 233 20 00</a>
+          circular-economy-101@yopmail.com
+        </a>
+        <a
+          class="text-primary hover:text-primary-shade"
+          href="javascript:void(0)"
+          >+34 93 233 20 00</a
+        >
       </address>
     </div>
   </div>
 
   <div
-    class="bg-white nav justify-content-center align-items-center py-2 border-top bg-light-subtle"
+    class="bg-white flex flex-wrap justify-center items-center py-2 border-t border-silver-light"
   >
-    <p class="leading-[1.5] d-flex align-items-center">
+    <p class="leading-[1.5] flex items-center">
       <include src="./views/logo-sm.html"></include>
-      <span class="h5 fw-bold text-secondary">Circular Economy 101</span>
+      <span class="font-secondary text-secondary text-xl font-bold">
+        Circular Economy 101
+      </span>
     </p>
 
-    <ul class="nav justify-content-center mx-md-4 mx-lg-5">
+    <ul class="flex justify-center md:mx-4 lg:mx-5">
       <include src="./views/nav-home.html"></include>
       <include src="./views/nav-items.html"></include>
     </ul>
 
-    <nav class="nav">
-      <button type="button">
+    <nav class="flex flex-wrap">
+      <button
+        class="py-1 px-3 text-primary hover:text-primary-shade cursor-pointer"
+        type="button"
+      >
         <i class="fa-brands fa-google"></i>
       </button>
-      <button type="button">
+      <button
+        class="py-1 px-3 text-primary hover:text-primary-shade cursor-pointer"
+        type="button"
+      >
         <i class="fa-brands fa-facebook"></i>
       </button>
-      <button type="button">
+      <button
+        class="py-1 px-3 text-primary hover:text-primary-shade cursor-pointer"
+        type="button"
+      >
         <i class="fa-brands fa-twitter"></i>
       </button>
     </nav>
 
-    <div class="d-flex mt-2 mt-xl-0 ms-xl-5">
+    <div class="flex items-center mt-2 lg:mt-0 lg:ms-5">
       <img
+        class="block h-[45px]"
         src="./assets/images/bcn.svg?as=webp"
         alt="Barcelona City Hall logo"
         width="145"
         height="45"
       />
-
       <img
+        class="block h-[45px]"
         src="./assets/images/fira.svg?as=webp"
         alt="Barcelona Fair logo"
         width="145"
@@ -104,243 +121,341 @@
       class="hidden mb-4 p-4 bg-secondary-shade border border-primary-subtle"
       id="js-collapse-references"
     >
-      <!-- website -->
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light rounded-t-md cursor-pointer"
-        href="https://sustainability-speakers.com/news/top-10-lists/official-circular-economy-speakers"
-        target="_blank"
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "rounded-t-md",
+        "href": "https://sustainability-speakers.com/news/top-10-lists/official-circular-economy-speakers",
+        "ca": "",
+        "text": "The Sustainability Speakers Agency",
+        "filetype": "website" 
+        }'
       >
-        The Sustainability Speakers Agency
-        <span class="text-primary">(website)</span>
-      </a>
-      <!-- images -->
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://commons.wikimedia.org/wiki/File:Ellen-McArthur_(1).jpg"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://commons.wikimedia.org/wiki/File:Ellen-McArthur_(1).jpg",
+        "ca": "",
+        "text": "Ellen McArthur",
+        "filetype": "image" 
+        }'
       >
-        Ellen McArthur
-        <span class="text-primary">(image)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://sustainability-speakers.com/wp-content/uploads/2021/04/Pia-Heidenmark-Cook-Sustainability-.jpg.webp"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://sustainability-speakers.com/wp-content/uploads/2021/04/Pia-Heidenmark-Cook-Sustainability-.jpg.webp",
+        "ca": "",
+        "text": "Pia Heidenmark Cook",
+        "filetype": "image" 
+        }'
       >
-        Pia Heidenmark Cook
-        <span class="text-primary">(image)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://climatehughes.org/wp-content/uploads/2022/02/EO0A7596-1280x914.jpg"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://climatehughes.org/wp-content/uploads/2022/02/EO0A7596-1280x914.jpg",
+        "ca": "",
+        "text": "Nigel Topping",
+        "filetype": "image" 
+        }'
       >
-        Nigel Topping
-        <span class="text-primary">(image)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://commons.wikimedia.org/wiki/File:2019_-_Centre_Stage_-_Day_2_VJR21719_(49024431887).jpg"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://commons.wikimedia.org/wiki/File:2019_-_Centre_Stage_-_Day_2_VJR21719_(49024431887).jpg",
+        "ca": "",
+        "text": "Kate Brandt",
+        "filetype": "image" 
+        }'
       >
-        Kate Brandt
-        <span class="text-primary">(image)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://eco-business.imgix.net/uploads/ebmedia/fileuploads/sally_uren.jpg?ar=16%3A10&auto=format&dpr=2&fit=crop&ixlib=django-1.2.0&q=45&width=480"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://eco-business.imgix.net/uploads/ebmedia/fileuploads/sally_uren.jpg?ar=16%3A10&auto=format&dpr=2&fit=crop&ixlib=django-1.2.0&q=45&width=480",
+        "ca": "",
+        "text": "Sally Uren",
+        "filetype": "image" 
+        }'
       >
-        Sally Uren
-        <span class="text-primary">(image)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://sustainability-speakers.com/wp-content/uploads/2021/04/Steve-Howard.jpg.webp"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://sustainability-speakers.com/wp-content/uploads/2021/04/Steve-Howard.jpg.webp",
+        "ca": "",
+        "text": "Steve Howard",
+        "filetype": "image" 
+        }'
       >
-        Steve Howard
-        <span class="text-primary">(image)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://commons.wikimedia.org/wiki/File:Jeremy_Schwartz.png"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://commons.wikimedia.org/wiki/File:Jeremy_Schwartz.png",
+        "ca": "",
+        "text": "Jeremy Schwartz",
+        "filetype": "image" 
+        }'
       >
-        Jeremy Schwartz
-        <span class="text-primary">(image)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://sustainability-speakers.com/wp-content/uploads/2022/02/Mike-Barry-Sustainability-.jpg.webp"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://sustainability-speakers.com/wp-content/uploads/2022/02/Mike-Barry-Sustainability-.jpg.webp",
+        "ca": "",
+        "text": "Mike Barry",
+        "filetype": "image" 
+        }'
       >
-        Mike Barry
-        <span class="text-primary">(image)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://assets.weforum.org/sf_account/image/bW1nk-YuXW1eeDOjkA61ZaORWIPK9KFyi-nFsm1iyfc.jpg"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://assets.weforum.org/sf_account/image/bW1nk-YuXW1eeDOjkA61ZaORWIPK9KFyi-nFsm1iyfc.jpg",
+        "ca": "",
+        "text": "Michael Pawlyn",
+        "filetype": "image" 
+        }'
       >
-        Michael Pawlyn
-        <span class="text-primary">(image)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://ses-cdn.react.hk/wp-content/uploads/2024/07/27123007/632921108a6c13b8652136c9_Keynote-Speech-A_Ms-Peggy-LIU_Photo.jpg"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://ses-cdn.react.hk/wp-content/uploads/2024/07/27123007/632921108a6c13b8652136c9_Keynote-Speech-A_Ms-Peggy-LIU_Photo.jpg",
+        "ca": "",
+        "text": "Peggy Liu",
+        "filetype": "image" 
+        }'
       >
-        Peggy Liu
-        <span class="text-primary">(image)</span>
-      </a>
-      <!-- videos -->
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://youtu.be/qCYkN3uQ0Vs"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://youtu.be/qCYkN3uQ0Vs",
+        "ca": "",
+        "text": "Ellen MacArthur Sustainability Speaker | The Importance of Embracing a Circular Economy",
+        "filetype": "video" 
+        }'
       >
-        Ellen MacArthur Sustainability Speaker | The Importance of Embracing a
-        Circular Economy
-        <span class="text-primary">(video)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://youtu.be/e2lUZurRX8k"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://youtu.be/e2lUZurRX8k",
+        "ca": "",
+        "text": "Pia Heidenmark Cook: Learning from IKEA`s approach to Sustainability [EXCLUSIVE INTERVIEW]",
+        "filetype": "video" 
+        }'
       >
-        Pia Heidenmark Cook: Learning from IKEA's approach to Sustainability
-        [EXCLUSIVE INTERVIEW]
-        <span class="text-primary">(video)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://youtu.be/fglK87oXbTE"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://youtu.be/fglK87oXbTE",
+        "ca": "",
+        "text": "The Issue With \"Environmentally Friendly\" | Q&A With UK Climate Champion",
+        "filetype": "video" 
+        }'
       >
-        The Issue With "Environmentally Friendly" | Q&A With UK Climate Champion
-        <span class="text-primary">(video)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://youtu.be/olLhLNrAEys"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://youtu.be/olLhLNrAEys",
+        "ca": "",
+        "text": "Kate Brandt: Google`s Chief Sustainability Officer on Google`s Circular Economy Mission",
+        "filetype": "video" 
+        }'
       >
-        Kate Brandt: Google's Chief Sustainability Officer on Google's Circular
-        Economy Mission
-        <span class="text-primary">(video)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://youtu.be/hhGxwkZNZj8"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://youtu.be/hhGxwkZNZj8",
+        "ca": "",
+        "text": "Sustainability Challenges For Retail & Hospitality | Q&A With CEO of Forum for the Future",
+        "filetype": "video" 
+        }'
       >
-        Sustainability Challenges For Retail & Hospitality | Q&A With CEO of
-        Forum for the Future
-        <span class="text-primary">(video)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://youtu.be/A4t55FUtVJg"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://youtu.be/A4t55FUtVJg",
+        "ca": "",
+        "text": "Steve Howard Sustainability Speaker | Future of the Climate Change Battle",
+        "filetype": "video" 
+        }'
       >
-        Steve Howard Sustainability Speaker | Future of the Climate Change
-        Battle
-        <span class="text-primary">(video)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://youtu.be/YP9Gri0zSo8"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://youtu.be/YP9Gri0zSo8",
+        "ca": "",
+        "text": "Jeremy Schwartz Speaker Showreel | Former CEO of The Body Shop Reveals Key Tools for Transformation",
+        "filetype": "video" 
+        }'
       >
-        Jeremy Schwartz Speaker Showreel | Former CEO of The Body Shop Reveals
-        Key Tools for Transformation
-        <span class="text-primary">(video)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://youtu.be/032TShApaho"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://youtu.be/032TShApaho",
+        "ca": "",
+        "text": "Full interview - Mike Barry, Marks & Spencer, talks about innovation",
+        "filetype": "video" 
+        }'
       >
-        Full interview - Mike Barry, Marks & Spencer, talks about innovation
-        <span class="text-primary">(video)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://youtu.be/vy2gOq6nTJY"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://youtu.be/vy2gOq6nTJY",
+        "ca": "",
+        "text": "Learning from nature | Michael Pawlyn | TEDxLondonCity2.0",
+        "filetype": "video" 
+        }'
       >
-        Learning from nature | Michael Pawlyn | TEDxLondonCity2.0
-        <span class="text-primary">(video)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://youtu.be/_yP9IRbxtEw"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://youtu.be/_yP9IRbxtEw",
+        "ca": "",
+        "text": "TEDxChCh - Peggy Liu - China as the Cleantech Laboratory of the World",
+        "filetype": "video" 
+        }'
       >
-        TEDxChCh - Peggy Liu - China as the Cleantech Laboratory of the World
-        <span class="text-primary">(video)</span>
-      </a>
-      <!-- articles -->
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://www.ellenmacarthurfoundation.org/topics/circular-economy-introduction/overview"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://www.ellenmacarthurfoundation.org/topics/circular-economy-introduction/overview",
+        "ca": "",
+        "text": "What is a circular economy?",
+        "filetype": "article" 
+        }'
       >
-        What is a circular economy?
-        <span class="text-primary">(article)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://www.ellenmacarthurfoundation.org/eliminate-waste-and-pollution"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://www.ellenmacarthurfoundation.org/eliminate-waste-and-pollution",
+        "ca": "",
+        "text": "Eliminate waste and pollution",
+        "filetype": "article" 
+        }'
       >
-        Eliminate waste and pollution
-        <span class="text-primary">(article)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://www.ellenmacarthurfoundation.org/circulate-products-and-materials"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://www.ellenmacarthurfoundation.org/circulate-products-and-materials",
+        "ca": "",
+        "text": "Circulate products and materials",
+        "filetype": "article" 
+        }'
       >
-        Circulate products and materials
-        <span class="text-primary">(article)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://www.ellenmacarthurfoundation.org/regenerate-nature"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://www.ellenmacarthurfoundation.org/regenerate-nature",
+        "ca": "",
+        "text": "Regenerate nature",
+        "filetype": "article" 
+        }'
       >
-        Regenerate nature
-        <span class="text-primary">(article)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://www.ellenmacarthurfoundation.org/articles/circular-ish-embracing-the-messy-reality-of-circular-economy-innovation"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://www.ellenmacarthurfoundation.org/articles/circular-ish-embracing-the-messy-reality-of-circular-economy-innovation",
+        "ca": "",
+        "text": "Circular-ish: embracing the messy reality of circular economy innovation",
+        "filetype": "article" 
+        }'
       >
-        Circular-ish: embracing the messy reality of circular economy innovation
-        <span class="text-primary">(article)</span>
-      </a>
-      <!-- logos -->
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-b border-silver-light cursor-pointer"
-        href="https://www.barcelona.cat/assetsdi/img/logo.svg"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "",
+        "href": "https://www.barcelona.cat/assetsdi/img/logo.svg",
+        "ca": "Ajuntament de Barcelona",
+        "text": "logo",
+        "filetype": "svg" 
+        }'
       >
-        <span lang="ca"> Ajuntament de Barcelona </span>
-        logo
-        <span class="text-primary">(svg)</span>
-      </a>
-      <a
-        class="block py-2 px-4 bg-white hover:bg-silver-subtle text-coal-subtle hover:text-coal border border-silver-light rounded-b-md cursor-pointer"
-        href="https://guestevents.firabarcelona.com/app/uploads/2022/01/logo-fira-de-barcelona-positive-1.svg"
-        target="_blank"
+      </include>
+
+      <include
+        src="./views/component-list-link.html"
+        locals='{
+        "css": "rounded-b-md",
+        "href": "https://guestevents.firabarcelona.com/app/uploads/2022/01/logo-fira-de-barcelona-positive-1.svg",
+        "ca": "Fira de Barcelona",
+        "text": "logo",
+        "filetype": "svg" 
+        }'
       >
-        <span lang="ca"> Fira de Barcelona </span>
-        logo
-        <span class="text-primary">(svg)</span>
-      </a>
+      </include>
     </div>
   </div>
 </footer>

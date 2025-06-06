@@ -5,11 +5,34 @@
 
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
-// TODO: JavaScript (modal y accordion)
 
 /**
  * Write any other JavaScript below
  */
+
+// TODO: docu
+// open "modal"
+document.opennModal = (bg = null, dialog = null) => {
+  if (!bg) throw new ReferenceError("Modal background not defined");
+  if (!dialog) throw new ReferenceError("Modal dialog not defined");
+
+  const modalBg = document.getElementById(bg);
+  const modalDialog = document.getElementById(dialog);
+  modalBg.classList.remove("hidden");
+  modalDialog.classList.remove("hidden");
+};
+
+// TODO: docu
+// close "modal"
+document.closeModal = (bg = null, dialog = null) => {
+  if (!bg) throw new ReferenceError("Modal background not defined");
+  if (!dialog) throw new ReferenceError("Modal dialog not defined");
+
+  const modalBg = document.getElementById(bg);
+  const modalDialog = document.getElementById(dialog);
+  modalBg.classList.add("hidden");
+  modalDialog.classList.add("hidden");
+};
 
 // toggle collapse of "references" list in index.html
 document.collapse = (toggler = null, icon = null, target = null) => {
@@ -66,7 +89,7 @@ const capitalize = (str) =>
 ////
 
 ((fragment) => {
-  const navLinks = document.getElementsByClassName("nav-link");
+  const navLinks = document.getElementsByClassName("js-nav-link");
 
   for (const navLink of navLinks) {
     const route =

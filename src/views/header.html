@@ -1,18 +1,20 @@
-<header class="py-3 shadow-sm">
-  <nav class="container-lg nav justify-content-around align-items-center">
-    <p class="leading-[1.5] nav-item">
-      <a
-        class="d-flex align-items-center text-decoration-none"
-        href="index.html"
-      >
+<header class="py-4 shadow-sm">
+  <nav class="flex justify-around items-center">
+    <p class="leading-[1.5] cursor-pointer">
+      <a class="flex flex-wrap items-center" href="index.html">
         <include src="./views/logo.html"></include>
-        <span class="h2 fw-bold text-secondary">Circular Economy 101</span>
+        <span class="text-2xl text-secondary font-secondary font-bold">
+          Circular Economy 101
+        </span>
       </a>
     </p>
-    <ul class="nav align-items-center">
+    <ul class="flex flex-wrap items-center">
       <include src="./views/nav-items.html"></include>
-      <li class="nav-item">
-        <a class="py-2 px-3 text-capitalize" href="javascript:void(0)">
+      <li class="block py-2 px-4">
+        <a
+          class="capitalize text-primary hover:text-primary-shade"
+          href="javascript:void(0)"
+        >
           <i class="fa-solid fa-language"></i>
         </a>
       </li>
