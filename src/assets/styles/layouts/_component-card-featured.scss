@@ -1,0 +1,23 @@
+.card-featured {
+  @apply bg-primary;
+
+  // Sweep Background vertically;
+  // background-image: none;
+  // background-image: linear-gradient(
+  //   to top,
+  //   var(--color-white) 50%,
+  //   var(--color-primary-light)
+  // );
+  // background-position: bottom;
+  // background-size: 100% 300%; // bigger vertically
+  // animation: sweep-bg-v-keyframes 1.75s ease-out normal infinite;
+
+  // @keyframes sweep-bg-v-keyframes {
+  //   0% {
+  //     background-position: bottom;
+  //   }
+  //   100% {
+  //     background-position: top;
+  //   }
+  // }
+}

@@ -1,0 +1,10 @@
+.card {
+  // shrink:1 not to exceed ".card-group" container
+  // grow:1 to fill available free space in ".card-group" container
+  @apply block flex-[1_1_250px] max-w-[250px] mx-auto mb-3 sm:mx-0 sm:mb-0 border border-4 border-plum-subtle rounded-xl shadow-sm;
+
+  // re-scale img when shrinking or growing the card
+  > img {
+    @apply inline h-[250px] object-cover object-top rounded-md rounded-b-[0];
+  }
+}

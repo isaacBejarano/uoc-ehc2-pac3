@@ -15,13 +15,13 @@
 
   // --breakpoint-lg
   @container pg-speakers-body (min-width: calc((992 / 16) * 1rem)) {
-    .speaker-featured {
-      @include mixins.sweep-bg-v(
-        var(--color-white),
-        var(--color-primary-light),
-        // TODO: docu
-        1.75s
-      );
-    }
+    // .card-featured {
+    //   @include mixins.sweep-bg-v(
+    //     var(--color-white),
+    //     var(--color-primary-light),
+    //     // TODO: docu
+    //     1.75s
+    //   );
+    // }
   }
 }
