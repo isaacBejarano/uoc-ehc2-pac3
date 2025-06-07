@@ -10,7 +10,6 @@
  * Write any other JavaScript below
  */
 
-// TODO: docu
 // open "modal"
 document.opennModal = (bg = null, dialog = null) => {
   if (!bg) throw new ReferenceError("Modal background not defined");
@@ -22,7 +21,6 @@ document.opennModal = (bg = null, dialog = null) => {
   modalDialog.classList.remove("hidden");
 };
 
-// TODO: docu
 // close "modal"
 document.closeModal = (bg = null, dialog = null) => {
   if (!bg) throw new ReferenceError("Modal background not defined");
