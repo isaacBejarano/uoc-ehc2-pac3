@@ -29,10 +29,7 @@
 @import "layouts/component-list-link";
 @import "layouts/component-list-conference";
 @import "layouts/component-card";
-
-// pages...
-// FIXME: remove
-// @import "layouts/speakers"; // TODO: use grid utility
+@import "layouts/component-card-featured";
 
 /**
  * Do NOT include anything else in this file!

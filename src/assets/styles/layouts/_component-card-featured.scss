@@ -1,23 +1,18 @@
-.card-featured {
-  @apply bg-primary;
+// Component CARD FEATURED
+////
 
-  // Sweep Background vertically;
-  // background-image: none;
-  // background-image: linear-gradient(
-  //   to top,
-  //   var(--color-white) 50%,
-  //   var(--color-primary-light)
-  // );
-  // background-position: bottom;
-  // background-size: 100% 300%; // bigger vertically
-  // animation: sweep-bg-v-keyframes 1.75s ease-out normal infinite;
+// --breakpoint-lg
+@container (min-width: calc((992 / 16) * 1rem)) {
+  .card-featured {
+    @apply bg-gradient-to-b from-primary-light to-white bg-size-[100%_300%] bg-bottom animate-[sweep-bg-v_1.75s_ease-out_normal_infinite];
 
-  // @keyframes sweep-bg-v-keyframes {
-  //   0% {
-  //     background-position: bottom;
-  //   }
-  //   100% {
-  //     background-position: top;
-  //   }
-  // }
+    @keyframes sweep-bg-v {
+      0% {
+        background-position: bottom;
+      }
+      100% {
+        background-position: top;
+      }
+    }
+  }
 }
